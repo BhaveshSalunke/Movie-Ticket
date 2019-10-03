@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to bottom, #3c4249 0%, #141619 120%);
+    height: auto;
+    font-family: sans-serif;
+    font-size: 14px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.section {
+    display:inline-block;
+    width: 100%;
+}
+.column {
+    display:inline-block;
+    width: 300px;
+    height: 500px;
+    background: #1d1d1d;
+    margin: 50px 10px;
+    box-shadow: 20px 20px 40px #151a1c ;
+
+}
+.left {
+    margin-left: 10%;
+}
+.center {
+    position: absolute;
+    /* margin: auto; */
+    left: 37%;
+}
+.right {
+    float: right;
+    margin-right: 10%;
+}
+.image{
+    position: relative;
+    height: 45%;
+    width: 100%;
+    background: url("img/poster.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 20%;
+}
+.image:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(29, 29, 29, 1) 100%);
+}
+.detail-contain {
+    position: relative;
+    width: 90%;
+    top: -10%;
+    margin: auto;
+    height: 55%;
+    color: #fff;
+}
+.movie-tags h1 {
+    position: absolute;
+    text-align: center;
+    margin: 10px 0;
+    letter-spacing: 1.0px;
+    color: #fff;
+}
+.movie-tags ul {
+    list-style: none;
+    font-size: 12px;
+    display: inline-flex;
+    margin: 10px 0;
+}
+.movie-tags ul li {
+    border: 1px solid white;
+    border-radius: 2px;
+    margin-right: 5px;
+    padding: 4px 10px;
+}
+.rating {
+    display: inline-flex;
+    height: 12%;
+}
+.rating img {
+
+    width: 25px;
+    height: 30px;
+    opacity: 0.8%;
+}
+.rating p {
+    position: relative;
+    margin: auto;
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+.available-screens ul {
+
+        list-style: none;
+        font-size: 12px;
+        display: inline-flex;
+        margin: 10px 0;
+
+}
+.available-screens ul li {
+        margin-right: 5px;
+        padding: 4px 10px;
+        border: gray 0.5px solid;
+        border-radius: 2px;
+
+}
+
+.synopsis h2 {
+    text-align: left;
+    font-size: 20px;
+}
+.synopsis p {
+    text-align: left;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.right h1 {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 20px auto;
+}
+.booking-details {
+    position: relative;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    height: 45%;
+    color: #fff;
+}
+.booking-details #date {
+    margin: 10px auto;
+    text-align: left;
+}
+.new-available-screens {
+    text-align: left;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.new-available-screens ul {
+    list-style: none;
+    margin: 5px auto;
+    display: inline-flex;
+
+}
+.new-available-screens ul li {
+    border: grey 1px solid;
+    border-radius: 2px;
+    margin: 0px 5px 0px 5px;
+    padding: 5px;
+    background: #534e71ad;
+}
+.screen-time {
+    list-style: none;
+    text-align: left;
+    margin: 10px auto;
+}
+.screen-time h2 {
+    letter-spacing: 1px;
+    font-family: monospace;
+    margin-top: 25px;
+}
+.screen-time ul {
+    list-style: none;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    font-size: 12px;
+}
+.screen-time ul li {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 8px;
+    border: grey 1px solid;
+    border-radius: 40%;
+}
+
+.screen-time li:hover {
+    opacity: 1.2;
+    cursor: pointer;
+    border: #534e71ad solid 1px;
+}
+.reserved {
+   background: #534e71;
+}
+.seat-label h2 {
+
+    font-family: monospace;
+    color: white;
+    text-align: left;
+    letter-spacing: 2px;
+    margin-left: 15px;
+}
+.seat-container {
+    width: min-content;
+    padding: 12px;
+}
+.seat-column {
+    display: inline-flex;
+}
+.section-seat{
+    display: table-cell;
+    margin: 10px auto;
+    padding: 6px;
+    margin-right: 0px;
+}
+.seat {
+    height: 17px;
+    width: 17px;
+    padding: 4px;
+    margin: 4px;
+    margin-bottom: 9px;
+    border-radius: 20%;
+    background-color: #fff;
+}
+.seat:hover {
+    opacity: 0.3;
+    background-color: lightblack;
+    cursor:pointer;
+    border: white 1px solid;
+}
+.selected {
+    background: #534e71;
+    border: #b3b1b1 1px solid;
+}
